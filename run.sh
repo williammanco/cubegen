@@ -55,6 +55,7 @@ convertSHTextToSHJavaScript() {
 
     # Cleanup temp file
     rm -rf output/${PREFIX}_sh_temp.txt
+    rm -rf output/${PREFIX}_sh.txt
 }
 
 run() {
