@@ -19,11 +19,16 @@ setup() {
         exit 1
     fi
     
+    # Clean up any old 'cmgen' binaries
+    rm -rf ./bin/cmgen
+
     # Create input and output directories
     log "Creating 'input' and 'output' directories"
 
     mkdir -p input
     mkdir -p output
+
+    echo "Succesfully created 'input' and 'output' directories"
 
 	# Grab the latest Filament MacOS release version (Darwin)
     log "Downloading the latest Filament release"
@@ -43,6 +48,8 @@ setup() {
 
     # Move the `cmgen` binary into in main `bin` directory
     mv ./bin/filament/bin/cmgen bin
+
+    echo "Succesfully extracted 'cmgen' into the 'bin' directory"
 
     # Clean Filament directory and compressed directory
     rm -rf ./bin/filament
