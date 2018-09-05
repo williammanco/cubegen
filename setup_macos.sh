@@ -34,16 +34,16 @@ setup() {
     wget $FILAMENT_URL -P bin -O ./bin/filament.tgz
     
     # Extract the compressed archive
-    tar -xvzf ./bin/filament.tgz -C bin
+    # tar -xvzf ./bin/filament.tgz -C bin
 
-    log "Extracing 'cmgen' from latest Filament release"
+    # log "Extracing 'cmgen' from latest Filament release"
 
     # Move the `cmgen` binary into in main `bin` directory
-    mv ./bin/filament/bin/cmgen bin
+    # mv ./bin/filament/bin/cmgen bin
 
     # Clean Filament directory and compressed directory
-    rm -rf ./bin/filament
-    rm -rf ./bin/filament.tgz
+    # rm -rf ./bin/filament
+    # rm -rf ./bin/filament.tgz
 }
 
 # Main script
