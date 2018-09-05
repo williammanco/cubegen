@@ -70,7 +70,7 @@ run() {
 	# Output precalculated DFG LUT
 	# Output irradiance and pre-scaled base SH
 	# Output mipmapped HDR images (m0 - m8), 256x256 to 1x1
-    ./bin/cmgen --ibl-dfg=output/${PREFIX}_dfg.png --sh-irradiance --ibl-dfg-multiscatter --sh-shader --sh-output=output/${PREFIX}_sh.txt --ibl-ld=output --format=hdr $INPUT
+    ./bin/cmgen --ibl-dfg=output/${PREFIX}_dfg.png --sh-irradiance --ibl-dfg-multiscatter --sh-shader --sh-output=output/${PREFIX}_sh.txt --ibl-ld=output --ibl-is-mipmap=output --format=hdr $INPUT
 
     # Convert outputted SH to a JavaScript file that can easily be interpreted
 	convertSHTextToSHJavaScript $PREFIX
