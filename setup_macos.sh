@@ -38,18 +38,20 @@ setup() {
     # Fetch the latest Filament MacOS release version (Darwin)
     wget $FILAMENT_URL -P bin -O ./bin/filament.tgz
     
+    log "Validating the downloaded compressed Filament archive"
+
     # Validate the retrieved tgz archive (does not check the integrity of the file)
     gzip -t ./bin/filament.tgz && echo "Filament was retrieved correctly and the archive is valid" || $(echo "Failed to retrieve Filament correctly and the archive is corrupted"; exit 1)
+
+    log "Extracing 'cmgen' from latest Filament release"
 
     # Extract the compressed archive
     tar -xvzf ./bin/filament.tgz -C bin
 
-    log "Extracing 'cmgen' from latest Filament release"
-
     # Move the `cmgen` binary into in main `bin` directory
     mv ./bin/filament/bin/cmgen bin
 
-    echo "Succesfully extracted 'cmgen' into the 'bin' directory"
+    echo -e "\nSuccesfully extracted 'cmgen' into the 'bin' directory"
 
     # Clean Filament directory and compressed directory
     rm -rf ./bin/filament
