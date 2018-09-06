@@ -3,6 +3,7 @@
 # Script to install and setup the required toolchain
 
 # Helper functions
+
 function log () {
 	echo -e "\033[36m"
 	echo "#########################################################"
