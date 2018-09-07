@@ -9,6 +9,8 @@
 
 <body>
     <script>
+        // Heavily based on https://github.com/TimvanScherpenzeel/binpacker-loader
+
         // Configuration
         const binpackFilepath = "output/green_point_park_4k_faces.binpack";
 
@@ -133,28 +135,11 @@
                                         type: mimeType,
                                     });
 
-                                    if (
-                                        (mimeType === 'image/png' ||
-                                            mimeType === 'image/jpeg' ||
-                                            mimeType === 'image/gif') &&
-                                        self.createImageBitmap !== undefined
-                                    ) {
-                                        createImageBitmap(blob)
-                                            .then(imageBitmap => {
-                                                self.postMessage({ imageBitmap }, [imageBitmap]);
-                                                resolve();
-                                            })
-                                            .catch(error => {
-                                                self.postMessage({ error });
-                                                reject();
-                                            });
-                                    } else {
-                                        self.postMessage({
-                                            name,
-                                            blob,
-                                            mimeType,
-                                        });
-                                    }
+                                    self.postMessage({
+                                        name,
+                                        blob,
+                                        mimeType,
+                                    });
                                 }),
                         ),
                     ).then(() => self.close());
