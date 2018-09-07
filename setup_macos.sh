@@ -20,11 +20,25 @@ setup() {
         exit 1
     fi
 
+    # Node.js is required for the @timvanscherpenzeel/binpacker package
     node --version | grep "v" &> /dev/null
 
     if [ $? != 0 ]; then
         echo "Please make sure to install Node.js <https://nodejs.org/en/download/>"
         exit 1
+    fi
+
+    # Install `npm` dependencies
+
+    # Check if Yarn is installed
+    yarn --version &> /dev/null
+
+    if [ $? == 0 ]; then 
+        echo "Installing NPM packages using Yarn"
+        yarn
+    else 
+        echo "Installing NPM packages using NPM"
+        npm install --no-package-lock
     fi
     
     # Clean up any old 'cmgen' binaries
