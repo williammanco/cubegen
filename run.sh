@@ -17,12 +17,12 @@ function log () {
 clean() {
     PREFIX=$1
 
-	rm -rf ./output/${PREFIX}_dfg.png
-	rm -rf ./output/${PREFIX}_sh_temp.txt
-	rm -rf ./output/${PREFIX}_sh.txt
-	rm -rf ./output/${PREFIX}_sh.js
-	rm -rf ./output/${PREFIX}_faces.binpack
-	rm -rf ./output/${PREFIX}
+	rm -rf output/${PREFIX}_dfg.png
+	rm -rf output/${PREFIX}_sh_temp.txt
+	rm -rf output/${PREFIX}_sh.txt
+	rm -rf output/${PREFIX}_sh.js
+	rm -rf output/${PREFIX}_faces.binpack
+	rm -rf output/${PREFIX}
 }
 
 convertSHTextToSHJavaScript() {
@@ -67,7 +67,9 @@ binpackFaces() {
 
 	log "Binpacking all outputted HDR faces"
 
-	npx binpacker -i output/${PREFIX} -o ./output/${PREFIX}_faces.binpack
+	npx binpacker -i output/${PREFIX} -o output/${PREFIX}_faces.binpack
+
+	rm -rf output/${PREFIX}
 }
 
 run() {
