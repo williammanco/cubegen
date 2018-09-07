@@ -28,9 +28,7 @@ setup() {
         exit 1
     fi
 
-    # Install `npm` dependencies
-
-    # Check if Yarn is installed
+    # Install `npm` dependencies, prefer using Yarn
     yarn --version &> /dev/null
 
     if [ $? == 0 ]; then 
