@@ -15,8 +15,15 @@ function log () {
 setup() {
     UNAME=$(uname)
 
-    if [ "$UNAME" != "Darwin" ] ; then
+    if [ "$UNAME" != "Darwin" ]; then
         echo "Currently only MacOS is supported by this automatic setup script"
+        exit 1
+    fi
+
+    node --version | grep "v" &> /dev/null
+
+    if [ $? != 0 ]; then
+        echo "Please make sure to install Node.js <https://nodejs.org/en/download/>"
         exit 1
     fi
     

@@ -21,6 +21,7 @@ clean() {
 	rm -rf ./output/${PREFIX}_sh_temp.txt
 	rm -rf ./output/${PREFIX}_sh.txt
 	rm -rf ./output/${PREFIX}_sh.js
+	rm -rf ./output/${PREFIX}_faces.binpack
 	rm -rf ./output/${PREFIX}
 }
 
@@ -61,6 +62,14 @@ convertSHTextToSHJavaScript() {
     rm -rf output/${PREFIX}_sh.txt
 }
 
+binpackFaces() {
+	PREFIX=$1
+
+	log "Binpacking all outputted HDR faces"
+
+	npx binpacker -i output/${PREFIX} -o ./output/${PREFIX}_faces.binpack
+}
+
 run() {
     PREFIX=$1
     INPUT=$2
@@ -85,6 +94,10 @@ run() {
 
     # Convert outputted SH to a JavaScript file that can easily be interpreted
 	convertSHTextToSHJavaScript $PREFIX
+
+	# Pack all the individual faces into a single binpack binary
+	# https://www.npmjs.com/package/@timvanscherpenzeel/binpacker
+	binpackFaces $PREFIX
 }
 
 # Main script

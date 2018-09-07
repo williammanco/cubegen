@@ -1,0 +1,11 @@
+{
+  "name": "cubegen",
+  "version": "0.0.1",
+  "description": "`Cubegen` is a simple Bash scripting wrapper around the excellend [cmgen](https://github.com/google/filament/tree/master/tools/cmgen), an image-based lighting asset generator, included in [Filament](https://github.com/google/filament/).",
+  "main": "index.js",
+  "author": "Tim van Scherpenzeel",
+  "license": "MIT",
+  "devDependencies": {
+    "@timvanscherpenzeel/binpacker": "^0.0.4"
+  }
+}
