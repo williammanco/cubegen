@@ -32,7 +32,7 @@ Install `Node.js` and install `node_modules` using `npm`.
 $ npm install
 ```
 
-Download the latest stable release or nightly build from [Filament](https://github.com/google/filament) and add the move the `cmgen` binary from `./bin/filament/bin/cmgen` to `bin` in this project.
+Download the latest stable release or nightly build from [Filament](https://github.com/google/filament) and move the `cmgen` binary from `./bin/filament/bin/cmgen` in `Filament` to `bin` in this project.
 
 ## Usage
 
