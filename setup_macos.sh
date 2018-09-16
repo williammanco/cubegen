@@ -51,11 +51,14 @@ setup() {
     echo "Succesfully created 'input' and 'output' directories"
 
 	# Grab the latest Filament MacOS stable release version (Darwin)
-    # To download a nightly build of Filament please visit https://filament-build.storage.googleapis.com/badges/build_link_mac.html
     log "Downloading the latest Filament release"
 
-	FILAMENT_URL=$(curl -s https://api.github.com/repos/google/filament/releases/latest | jq -r ".assets[] | select(.name | test(\"darwin\")) | .browser_download_url")
+    # Latest stable release
+	# FILAMENT_URL=$(curl -s https://api.github.com/repos/google/filament/releases/latest | jq -r ".assets[] | select(.name | test(\"darwin\")) | .browser_download_url")
 	
+    # Latest nightly release
+    FILAMENT_URL=$(curl https://filament-build.storage.googleapis.com/badges/build_link_mac.html | grep -ioE "https://.*.tgz")
+
     # Fetch the latest Filament MacOS stable release version (Darwin)
     wget "$FILAMENT_URL" -P bin -O ./bin/filament.tgz
     
