@@ -18,11 +18,21 @@ All HDR faces are effectively packed in a single `.binpack` file. `Binpacking` i
 
 ## Installation
 
-Automagically set up for MacOS.
+Automatically set up for MacOS.
 
 ```sh
 $ ./setup_macos.sh
 ```
+
+Or please follow the following instructions:
+
+Install `Node.js` and install `node_modules` using `npm`.
+
+```sh
+$ npm install
+```
+
+Download the latest stable release or nightly build from [Filament](https://github.com/google/filament) and add the move the `cmgen` binary from `./bin/filament/bin/cmgen` to `bin` in this project.
 
 ## Usage
 
