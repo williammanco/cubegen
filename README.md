@@ -27,7 +27,7 @@ $ ./setup_macos.sh
 ## Usage
 
 ```sh
-$ ./run <input>
+$ ./run.sh <input>
 ```
 
 ## Resources
