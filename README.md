@@ -4,9 +4,9 @@ A Bash scripting wrapper around [CMGEN](<(https://github.com/google/filament/tre
 
 `Cubegen` outputs the following files:
 
-- A single `.binpack` file with the complete mipchain of pre-filtered HDR environment images.
-- Pre-scaled spherical harmonics in a single JavaScript Float32Array.
-- A multi-scatter DFG LUT (for split sum IBL approximation).
+- [A single `.binpack` file with the complete mipchain of pre-filtered HDR environment images](output/green_point_park_4k_faces.binpack).
+- [Pre-scaled spherical harmonics in a single JavaScript Float32Array](output/green_point_park_4k_sh.js).
+- [A multi-scatter DFG LUT (for split sum IBL approximation)](output/green_point_park_4k_dfg.png).
 
 `cmgen` outputs both prefiltered and non-prefiltered HDR faces `[m0 - m8]` `(256x256 - 1x1)`. By using a combination of the prefiltered and non-prefiltered face you can get a more gradual transition between the different mip levels. The outputted faces are made seamless through `cmgen` by duplicating a row of pixels to the bottom or a column to the right of each face that don't have an adjacent face in the image (the duplicate is taken from the adjacent face in the cubemap). This is because when accessing an image with bilinear filtering, we always overshoot to the right or bottom. This works well with cubemaps stored as a cross in memory.
 
