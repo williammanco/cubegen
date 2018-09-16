@@ -1,7 +1,7 @@
 {
   "name": "cubegen",
   "version": "0.0.1",
-  "description": "A simple Bash scripting wrapper around the excellent cmgen, an image-based lighting asset generator, included in Filament.",
+  "description": "A Bash scripting wrapper around CMGEN, an image-based lighting asset generator, included in Filament.",
   "main": "index.js",
   "author": "Tim van Scherpenzeel",
   "license": "MIT",

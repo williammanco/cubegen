@@ -1,6 +1,6 @@
 # Cubegen
 
-A simple Bash scripting wrapper around the excellent [cmgen](https://github.com/google/filament/tree/master/tools/cmgen), an image-based lighting asset generator, included in [Filament](https://github.com/google/filament/).
+A Bash scripting wrapper around [CMGEN](<(https://github.com/google/filament/tree/master/tools/cmgen)>), an image-based lighting asset generator, included in [Filament](https://github.com/google/filament/).
 
 `Cubegen` outputs the following files:
 
