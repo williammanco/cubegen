@@ -42,23 +42,13 @@ $ ./run.sh <input>
 
 ## Resources
 
-- [Binpacker](https://github.com/timvanscherpenzeel/binpacker)
-- [Binpacker-loader](https://github.com/timvanscherpenzeel/binpacker-loader)
 - [Filament](https://github.com/google/filament)
-- [CMFT](https://github.com/dariomanesku/cmft)
-- [Envtools - alternative to CMFT with more configuration options, the fork uses Docker](https://github.com/cedricpinson/envtools)
-- [Spherical harmonics for beginners](https://dickyjim.wordpress.com/2013/09/04/spherical-harmonics-for-beginners/)
+- [Filament documentation](https://google.github.io/filament/Filament.md.html)
+- [Real Shading in Unreal Engine 4](https://blog.selfshadow.com/publications/s2013-shading-course/karis/s2013_pbs_epic_slides.pdf)
 - [Diffuse irradiance](https://learnopengl.com/PBR/IBL/Diffuse-irradiance)
 - [Specular IBL](https://learnopengl.com/PBR/IBL/Specular-IBL)
 - [HDR Image-Based Lighting on the Web](https://webglinsights.github.io/downloads/WebGL-Insights-Chapter-16.pdf)
 - [Image-Based Lighting](http://ict.usc.edu/pubs/Image-Based%20Lighting.pdf)
-- [RGBM color encoding](https://graphicrants.blogspot.nl/2009/04/rgbm-color-encoding.html)
-- [Pragmatic PBR HDR](http://marcinignac.com/blog/pragmatic-pbr-hdr)
-- [An Efficient Representation for Irradiance Environment Maps](http://graphics.stanford.edu/papers/envmap/)
-- [A Survey of Efficient Representations for Independent Unit Vectors](http://jcgt.org/published/0003/02/01/paper.pdf)
-- [WebGL-based Prefiltered Mipmaped Radiance Environment Map (PMREM) generator](https://github.com/mrdoob/three.js/issues/7402)
-- [Advanced WebGL - Part 3: Irradiance Environment Map](http://codeflow.org/entries/2011/apr/18/advanced-webgl-part-3-irradiance-environment-map/)
-- [Real-Time Computation of Dynamic Irradiance Environment Maps](https://developer.nvidia.com/gpugems/GPUGems2/gpugems2_chapter10.html)
 
 A very good resource for free CC0 HDRI's is [https://hdrihaven.com/](https://hdrihaven.com/).
 
