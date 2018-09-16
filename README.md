@@ -10,7 +10,7 @@ A simple Bash scripting wrapper around the excellent [cmgen](https://github.com/
 
 `cmgen` outputs both prefiltered and non-prefiltered HDR faces `[m0 - m8]` `(256x256 - 1x1)`. By using a combination of the prefiltered and non-prefiltered face you can get a more gradual transition between the different mip levels. The outputted faces are made seamless through `cmgen` by duplicating a row of pixels to the bottom or a column to the right of each face that don't have an adjacent face in the image (the duplicate is taken from the adjacent face in the cubemap). This is because when accessing an image with bilinear filtering, we always overshoot to the right or bottom. This works well with cubemaps stored as a cross in memory.
 
-All HDR faces are effectively packed in a single `.binpack` file. `Binpacking` is an efficient way of packing textures without the downsides of texture atlases. For more information please refer to the [Binpack documentation](https://github.com/timvanscherpenzeel/binpacker). The `.binpack` file can efficiently be loaded and parsed in a web worker. For an example please refer to [docs/main.js](/docs/main.js).
+All HDR faces are effectively packed in a single `.binpack` file. `Binpacking` is an efficient way of packing textures without the downsides of texture atlases. For more information please refer to the [Binpack documentation](https://github.com/timvanscherpenzeel/binpacker). The `.binpack` file can efficiently be loaded and parsed in a web worker. For an example please refer to [main.js](main.js).
 
 ## Installation
 
