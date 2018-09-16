@@ -1,7 +1,7 @@
 // Heavily based on https://github.com/TimvanScherpenzeel/binpacker-loader
 
 // Configuration
-const binpackFilepath = '../output/green_point_park_4k_faces.binpack';
+const binpackFilepath = 'output/green_point_park_4k_faces.binpack';
 
 // Utilities
 function createWebWorkerInstance(content) {
