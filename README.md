@@ -4,7 +4,7 @@
 
 `Cubegen` outputs the following files:
 
-- A single texture with the complete mipchain of pre-filtered HDR environment images
+- A single `.binpack` file with the complete mipchain of pre-filtered HDR environment images. `Binpacking` is an efficient way of packing textures without the downsides of texture atlases. For more information please refer to the [Binpack documentation](https://github.com/timvanscherpenzeel/binpacker). The `.binpack` file can efficiently be loaded and parsed in a web worker (see [docs/main.js](/docs/main.js)).
 - Spherical harmonics in a JavaScript Float32Array
 - Multi-scatter DFG LUT (for split sum IBL approximation)
 
