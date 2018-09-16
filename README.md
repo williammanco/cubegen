@@ -54,4 +54,4 @@ A very good resource for free CC0 HDRI's is [https://hdrihaven.com/](https://hdr
 
 ## Licence
 
-`cubegen` is released under the [MIT licence](https://raw.githubusercontent.com/TimvanScherpenzeel/cubegen/master/LICENSE).
+`cubegen` is released under the [MIT licence](https://raw.githubusercontent.com/TimvanScherpenzeel/cubegen/master/LICENSE). The included HDR image has been downloaded from [HDRI Haven](https://hdrihaven.com/p/license.php) and is released under the CC0 licence.
