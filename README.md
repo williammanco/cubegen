@@ -12,6 +12,10 @@ A simple Bash scripting wrapper around the excellent [cmgen](https://github.com/
 
 All HDR faces are effectively packed in a single `.binpack` file. `Binpacking` is an efficient way of packing textures without the downsides of texture atlases. For more information please refer to the [Binpack documentation](https://github.com/timvanscherpenzeel/binpacker). The `.binpack` file can efficiently be loaded and parsed in a web worker. For an example please refer to [main.js](main.js).
 
+## Demo
+
+[Live demo](https://timvanscherpenzeel.github.io/cubegen/)
+
 ## Installation
 
 Automagically set up for MacOS.
@@ -20,9 +24,11 @@ Automagically set up for MacOS.
 $ ./setup_macos.sh
 ```
 
-## Live demo
+## Usage
 
-[Live demo](https://timvanscherpenzeel.github.io/cubegen/)
+```sh
+$ ./run <input>
+```
 
 ## Resources
 
