@@ -4,7 +4,7 @@ A Bash scripting wrapper around [cmgen](https://github.com/google/filament/tree/
 
 `Cubegen` outputs the following files:
 
-- [A single `.binpack` file with the complete mipchain of pre-filtered HDR environment images](output/green_point_park_4k_faces.binpack).
+- [A single `.binpack` file with the complete mipchain of pre-filtered and non-prefiltered HDR environment images](output/green_point_park_4k_faces.binpack).
 - [Pre-scaled spherical harmonics in a single JavaScript Float32Array](output/green_point_park_4k_sh.js).
 - [A multi-scatter DFG LUT (for split sum IBL approximation)](output/green_point_park_4k_dfg.png).
 
