@@ -42,13 +42,14 @@ setup() {
     # Clean up any old 'cmgen' binaries
     rm -rf ./bin/cmgen
 
-    # Create input and output directories
-    log "Creating 'input' and 'output' directories"
+    # Create input, output and bin directories
+    log "Creating 'input', 'output' and 'bin' directories"
 
     mkdir -p input
     mkdir -p output
+    mkdir -p bin
 
-    echo "Succesfully created 'input' and 'output' directories"
+    echo "Succesfully created 'input', 'output' and 'bin' directories"
 
 	# Grab the latest Filament MacOS stable release version (Darwin)
     log "Downloading the latest Filament release"
