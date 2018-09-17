@@ -54,7 +54,7 @@ setup() {
     log "Downloading the latest Filament release"
 
     # Latest stable release
-	# FILAMENT_URL=$(curl -s https://api.github.com/repos/google/filament/releases/latest | jq -r ".assets[] | select(.name | test(\"darwin\")) | .browser_download_url")
+    # FILAMENT_URL=$(curl -s https://api.github.com/repos/google/filament/releases/latest | jq -r ".assets[] | select(.name | test(\"darwin\")) | .browser_download_url")
 
     # Latest nightly release
     FILAMENT_URL=$(curl https://filament-build.storage.googleapis.com/badges/build_link_mac.html | grep -ioE "https://.*.tgz")
