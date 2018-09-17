@@ -18,7 +18,9 @@ All HDR faces are packed in a single `.binpack` file. `Binpacking` is an efficie
 
 ## Installation
 
-Automatically set up for MacOS.
+`Cubegen` does not ship the `cmgen` binary due to licence concerns and seeing as the Filament is in active development it would be good to keep up to date with the latest changes.
+
+Automatically set up for MacOS:
 
 ```sh
 $ ./setup_macos.sh
